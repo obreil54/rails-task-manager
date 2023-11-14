@@ -1,0 +1,118 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "font-awesome";
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #f0f3f0;
+  margin-bottom: 5px;
+  width: 40%
+}
+
+#details-card {
+  background-color: #f0f3f0;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+#details-card p {
+  margin: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #195b96;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type=submit] {
+  width: fit-content;
+  background-color: #377bb5;
+  color: white;
+  padding: 10px;
+  border: 1px solid #377bb5;
+  border-radius: 3px;
+}
+
+input[type=submit]:hover {
+  background-color: #195b96;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+
+input[name="task[details]"] {
+  height: 4em;
+}
+
+#completed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+#completed label {
+  font-weight: normal;
+}
+
+input[type=checkbox] {
+  margin-left: 0;
+}
+
+#task-headers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#task-headers a {
+  width: fit-content;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+#task-headers a:hover {
+  background-color: #f0f3f0;
+}

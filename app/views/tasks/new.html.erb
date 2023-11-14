@@ -1,0 +1,11 @@
+<div class="border-bottom">
+  <h1>New task</h1>
+  <%= form_with model: @task do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :details %>
+    <%= f.text_field :details %>
+    <%= f.submit %>
+  <% end %>
+</div>
+<%= link_to raw("<i class='fa-solid fa-clock-rotate-left'></i> Back to list"), tasks_path %>

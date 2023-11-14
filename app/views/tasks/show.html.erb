@@ -1,0 +1,16 @@
+<div class="border-bottom">
+  <div id="task-headers">
+    <h1><%= @task.title %></h1>
+    <%= link_to raw("<i class='fa-solid fa-pencil'></i> Edit this task"), edit_path%>
+  </div>
+  <div id="details-card">
+    <p><%= @task.details %></p>
+  </div>
+  <% if @task.completed%>
+    <p><input type="checkbox" checked>This task is completed</p>
+  <% else %>
+    <p><input type="checkbox">This task is not completed yet</p>
+  <% end %>
+  </div>
+</div>
+<%= link_to raw("<i class='fa-solid fa-clock-rotate-left'></i> Back to list"), tasks_path %>
